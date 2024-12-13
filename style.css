@@ -241,8 +241,21 @@ MODAL
     box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.4);
     border-radius: 20px;
     overflow: hidden;
+    display: flex;
 }
 
+.modal__half {
+    width: 50%;
+}
+
+.modal__about {
+    background-color: rgb(245, 245, 245);
+}
+
+.modal__contact {
+    background-color: #242424;
+    color: white;
+}
 
 
 /* 
