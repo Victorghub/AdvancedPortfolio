@@ -242,6 +242,7 @@ MODAL
     border-radius: 20px;
     overflow: hidden;
     display: flex;
+    
 }
 
 .modal__half {
