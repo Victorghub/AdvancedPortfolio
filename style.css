@@ -37,6 +37,7 @@ li {
 }
 
 .click {
+    cursor: pointer;
     transition: all 300ms ease;
 }
 
@@ -391,6 +392,15 @@ transform: scale(1);
     }
 }
 
+.modal__exit {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: white;
+    font-size: 36px;
+    z-index: 100;
+}
+
 .modal__overlay {
     position: absolute;
     left: 0;
@@ -400,6 +410,7 @@ transform: scale(1);
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -1;
 }
 
 .modal__overlay--success {
@@ -407,9 +418,12 @@ transform: scale(1);
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    padding: 24px;
+    padding: 28px;
 }
 
+.modal__overlay--visible {
+    z-index: 1;
+}
 
 /* 
 
