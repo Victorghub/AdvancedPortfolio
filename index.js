@@ -1,7 +1,3 @@
-let isModalOpen = false;
-let contrastToggle = false;
-const scaleFactor = 1 / 20;
-
 
 function contact(event) {
     event.preventDefault();
@@ -28,7 +24,7 @@ function contact(event) {
   }
 
 
-
+  let isModalOpen = false;
   function toggleModal() {
     if (isModalOpen) {
       isModalOpen = false;
@@ -38,6 +34,7 @@ function contact(event) {
     document.body.classList += " modal--open";
   }
 
+  let contrastToggle = false;
  function toggleContrast() {
   contrastToggle = !contrastToggle;
   if (contrastToggle) {
@@ -48,6 +45,7 @@ function contact(event) {
   }
   }
 
+  const scaleFactor = 1 / 20;
   function moveBackground(event) {
     const shapes = document.querySelectorAll(".shape");
     const x = event.clientX * scaleFactor;
@@ -59,5 +57,4 @@ function contact(event) {
       shapes[i].style.transform = `translate(${x * boolInt}px, ${y * boolInt}px)`
     }
   }
-  
   
